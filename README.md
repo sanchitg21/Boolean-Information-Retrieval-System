@@ -40,15 +40,23 @@ Precedence order: NOT (~) > AND (&) > OR (|)
 
 ## Procedure
 
-a. Stopword Removal - self.stopword = set(stopwords.words("english")). Implemented in BooleanIRModel class of Model file.
-b. Stemming - 
-c. Building Index -
-d. Querying - 
+a. Stopword Removal - self.stopword = set(stopwords.words("english")). 
+                      Implemented in BooleanIRModel class of Model file.
+                      
+b. Stemming -   words = [self.PorterStemmer().stem(word) for word in words]. 
+                        Implemented in preprocess method. 
+                        
+c. Building Index - for term in terms:
+                        self.postings[term].append(i)
+                    self.dictionary = self.postings.keys()
+                    Implemented in preprocess method. 
+                    
+d. Querying - Implemented in query.py where we enter the query. The operations on query is done in model.py in query,find,bits,solve methods
 
-1. Preprocessing to build standard inverted index
-   - Remove special characters and digits
-   - Tokenize
-   - Lowercasing
-   - 
-   - Add unique words and their postings to the index
-   - WildCard Queries
+Preprocess method does preprocessing to build standard inverted index
+1. Remove special characters
+2. Remove digits
+3. Tokenize
+4. Lowercasing
+5. Stemming using PorterStemmer
+6. Add unique words and their postings to the index
