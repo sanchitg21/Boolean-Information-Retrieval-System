@@ -28,6 +28,8 @@ Skip this section if you already have NLTK installed and NLTK Data downloaded
 
 ### Queries
 
+Use &,~,| as boolean operators.
+
 Precedence order: NOT (~) > AND (&) > OR (|)
 
 - Single term => `brutus`
@@ -36,12 +38,17 @@ Precedence order: NOT (~) > AND (&) > OR (|)
 - Parenthesis => `( brutus | richard ) & henry`
                  `( ~brutus | henry ) & richard`
 
-## Methodology
+## Procedure
+
+a. Stopword Removal - self.stopword = set(stopwords.words("english")). Implemented in BooleanIRModel class of Model file.
+b. Stemming - 
+c. Building Index -
+d. Querying - 
 
 1. Preprocessing to build standard inverted index
    - Remove special characters and digits
    - Tokenize
    - Lowercasing
-   - Stemming using `PorterStemmer`
+   - 
    - Add unique words and their postings to the index
    - WildCard Queries
