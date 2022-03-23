@@ -13,7 +13,7 @@ The document corpus consists of documents, provided by our Professor N.L.Bhanu M
 You need to install nltk for tokenization and stemming. You can do it via pip:
 
 ```bash
-sudo pip3 install -U nltk
+pip3 install -U nltk
 ```
 
 - To download NLTK data used for the model, open your terminal or command prompt and enter following commands:
