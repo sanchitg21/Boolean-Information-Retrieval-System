@@ -120,6 +120,16 @@ Searching Time:  2.70437240600586
 ['henry-iv-part-1_TXT_FolgerShakespeare.txt', 'henry-iv-part-2_TXT_FolgerShakespeare.txt', 'henry-vi-part-1_TXT_FolgerShakespeare.txt', 'henry-vi-part-2_TXT_FolgerShakespeare.txt', 'henry-vi-part-3_TXT_FolgerShakespeare.txt', 'henry-viii_TXT_FolgerShakespeare.txt', 'henry-v_TXT_FolgerShakespeare.txt', 'king-john_TXT_FolgerShakespeare.txt', 'richard-iii_TXT_FolgerShakespeare.txt', 'richard-ii_TXT_FolgerShakespeare.txt', 'romeo-and-juliet_TXT_FolgerShakespeare.txt', 'the-taming-of-the-shrew_TXT_FolgerShakespeare.txt']
 Entering Query + Searching Time:  20.63770055770874
 
+**Test Case(Combination of correct and mispelled word)**
+Preprocessing + Indexing Time:  29.323376893997192
+Search Query:juliet | ~shakepeare
+shakepear  is not found in the corpus!
+Did you mean these ? : 
+shakespeare
+Giving results based on:  shakespeare
+Searching Time:  2.12913131713867
+['measure-for-measure_TXT_FolgerShakespeare.txt', 'romeo-and-juliet_TXT_FolgerShakespeare.txt']
+Entering Query + Searching Time:  15.994519710540771
 
 
 ### Contributors
