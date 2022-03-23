@@ -60,3 +60,70 @@ Preprocess method does preprocessing to build standard inverted index
 4. Lowercasing
 5. Stemming using PorterStemmer
 6. Add unique words and their postings to the index
+
+**Test Case ( Mispelt Words)---Tackled by editdistance**
+Preprocessing + Indexing Time:  23.633147954940796
+Search Query: **henny | (~shakepeare)**
+henny  is not found in the corpus!
+Did you mean these ? : 
+denis
+meiny
+heady
+dennis
+hence
+henry
+herby
+envied
+heavy
+mentis
+sennois
+tennis
+penny
+henrys
+fenny
+bonny
+envies
+herne
+senis
+deny
+hens
+finny
+envys
+hernes
+heaviness
+envy
+denies
+nonny
+sunny
+ginnys
+denied
+envying
+ninnys
+hewhy
+denying
+hannibal
+thenby
+denny
+Giving results based on:  henry
+shakepear  is not found in the corpus!
+Did you mean these ? : 
+shakespeare
+Giving results based on:  shakespeare
+Searching Time:  1.53685951232910
+['henry-iv-part-1_TXT_FolgerShakespeare.txt', 'henry-iv-part-2_TXT_FolgerShakespeare.txt', 'henry-vi-part-1_TXT_FolgerShakespeare.txt', 'henry-vi-part-2_TXT_FolgerShakespeare.txt', 'henry-vi-part-3_TXT_FolgerShakespeare.txt', 'henry-viii_TXT_FolgerShakespeare.txt', 'henry-v_TXT_FolgerShakespeare.txt', 'king-john_TXT_FolgerShakespeare.txt', 'lucrece_TXT_FolgerShakespeare.txt', 'richard-iii_TXT_FolgerShakespeare.txt', 'richard-ii_TXT_FolgerShakespeare.txt', 'the-taming-of-the-shrew_TXT_FolgerShakespeare.txt', 'venus-and-adonis_TXT_FolgerShakespeare.txt']
+Entering Query + Searching Time:  12.86674427986145
+
+**Test Case (Correctly spelt words)**
+Preprocessing + Indexing Time:  29.037702798843384
+**Search Query:(richard & henry) | romeo**
+Searching Time:  2.70437240600586
+['henry-iv-part-1_TXT_FolgerShakespeare.txt', 'henry-iv-part-2_TXT_FolgerShakespeare.txt', 'henry-vi-part-1_TXT_FolgerShakespeare.txt', 'henry-vi-part-2_TXT_FolgerShakespeare.txt', 'henry-vi-part-3_TXT_FolgerShakespeare.txt', 'henry-viii_TXT_FolgerShakespeare.txt', 'henry-v_TXT_FolgerShakespeare.txt', 'king-john_TXT_FolgerShakespeare.txt', 'richard-iii_TXT_FolgerShakespeare.txt', 'richard-ii_TXT_FolgerShakespeare.txt', 'romeo-and-juliet_TXT_FolgerShakespeare.txt', 'the-taming-of-the-shrew_TXT_FolgerShakespeare.txt']
+Entering Query + Searching Time:  20.63770055770874
+
+
+
+### Contributors
+Done by:
+1. Sanchit Gupta (2020A7PS2069H)
+2. Rahul Jauhari (2020A7PS0106H)
+3. Abhiraj Khare (2020A7PS0161H)
