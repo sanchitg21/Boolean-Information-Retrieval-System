@@ -122,7 +122,7 @@ Entering Query + Searching Time:  20.63770055770874
 
 **Test Case(Combination of correct and mispelled word)**
 Preprocessing + Indexing Time:  29.323376893997192
-Search Query:juliet | ~shakepeare
+**Search Query:juliet | ~shakepeare**
 shakepear  is not found in the corpus!
 Did you mean these ? : 
 shakespeare
