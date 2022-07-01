@@ -130,10 +130,3 @@ Giving results based on:  shakespeare
 Searching Time:  2.12913131713867
 ['measure-for-measure_TXT_FolgerShakespeare.txt', 'romeo-and-juliet_TXT_FolgerShakespeare.txt']
 Entering Query + Searching Time:  15.994519710540771
-
-
-### Contributors
-Done by:
-1. Sanchit Gupta (2020A7PS2069H)
-2. Rahul Jauhari (2020A7PS0106H)
-3. Abhiraj Khare (2020A7PS0161H)
